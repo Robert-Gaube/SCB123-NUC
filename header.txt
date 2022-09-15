@@ -1,0 +1,55 @@
+Class Date:
+-	Day : unsigned
+-	Month : unsigned
+-	Year : unsigned
+•	Constructor
+Class Government ID:
+-	Type : enum (National ID, Passport)
+-	Number : unsigned 
+-	…
+•	Constructor
+Class Address:
+-	Street : string
+-	Flat : string
+-	Country: string
+-	Town : string
+-	County : string
+-	Postal Code : string
+-	Apartment Number : unsigned
+-	House Number : unsigned
+Class Person:
+-	Name : string (FirstName SecondName ThirdName …)
+-	Date of Birth : DATE
+-	Personal Email : string 
+-	Home Address : ADDRESS
+-	Personal Government ID : GOVERNMENT ID
+•	Constructor		
+Class Paycheck:
+-	Amount : unsigned
+-	Tax Precent : unsigned (between 0 – 100)
+-	Date : DATE
+Class Employee:
+-	Person Inherit
+-	Company Email : string
+-	Company ID: unsigned long 
+-	Banking Information (Banking)
+-	Team : Enum (Teams)
+-	Position : Enum (Positions)
+-	Salary : unsigned long 
+-	Paychecks : PAYCHECK*
+•	Constructor
+•	Company Email Creator
+•	Company ID Creator
+Class Site:
+-	Address :  ADDRESS
+-	Employees : EMPLOYEE*
+Class Company:
+-	Name
+-	Sites : SITE*
+-	Global Information
+
+Functions:
+	Today’s Birthdays (Site)
+	List employees alphabetically (Site)
+	Search employees by name (Site, Name)
+	Distribute Paycheck to employees (IDs, Paycheck)
